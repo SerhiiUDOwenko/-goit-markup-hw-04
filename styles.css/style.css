@@ -1,0 +1,29 @@
+body,
+p,
+button {
+  width: 900px;
+  margin: 0 auto;
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #626262;
+}
+
+.navigation li a:hover {
+  color: #03a9f4;
+}
+.category {
+  font-family: 'Ubuntu';
+  text-transform: uppercase;
+  color: #b4ad9e;
+  margin-bottom: 28px;
+}
+h2 {
+  font-size: 29px;
+  font-weight: 400;
+}
+.more {
+  font-size: 20px;
+  border: 1px solid;
+}
