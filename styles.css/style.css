@@ -64,7 +64,7 @@ button {
   margin-bottom: 34px;
 }
 .article img {
-  height: 280px;
+  max-height: 280px;
 }
 
 .category {
