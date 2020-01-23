@@ -1,23 +1,45 @@
+/*
+Tatyana Guzeva
+1. navigation мажрины нужно изменить на паддинги.
+ Маржин-топ navigationпробивает родителя +
+2. navigation-list 
+нужно дописать маржин: 0 и паддинг: 0 +
+3. потеряли <main> и секцию +
+4. всем параграфам и заголовкам нужно 
+написать маржин: 0, а потом маржин-боттом,
+ чтоб получить вертикальній отступ. 
+ Только последнему заголвоку в статье
+  не пишем маржин-боттом + 
+5. more нужно убрать маржин-боттом
+ и написать паддинг-боттом. +
+  старайтесь убирать маржины у крайних элементов*/
+
 /*general styles*/
 body,
 p,
+h2,
+h3,
 button {
+  margin: 0;
   font-family: 'Playfair Display', serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   color: #626262;
+
 }
-.wrapper {
+main {
   width: 900px;
   margin: 0 auto;
 }
 /*navigation*/
 .navigation {
-  margin-top: 76px;
-  margin-bottom: 104px;
+  padding-top: 76px;
+  padding-bottom: 104px;
 }
 .navigation-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
   display: flex;
   justify-content: space-evenly;
@@ -35,6 +57,9 @@ button {
   color: #03a9f4;
 }
 /*main*/
+.blog{
+  margin-bottom: 75px;
+}
 .post-block {
   padding: 0;
   margin-top: 0px;
@@ -80,10 +105,11 @@ button {
   height: 60px;
   display: block;
   margin: 0 auto;
-  margin-bottom: 75px;
+ 
   font-size: 20px;
   border: 1px solid;
   background: #fff;
+  cursor: pointer;
 }
 
 .more::first-letter {
